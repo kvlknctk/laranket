@@ -22,11 +22,12 @@
                                     sil
                                 </button>
                             </form>
+                            <hr>
                     @endforeach
                     </ul>
                 {{--<a href="{{route('secenek.create', ['id' => $item->id])}}" class="btn btn-xs btn-success">Seçenek ekle</a>--}}
                 <hr>
-                <form action="{{route('secenek.store')}}" method="POST" >
+                <form action="{{route('secenek.store')}}" method="POST"  >
                     @csrf
                     <input type="hidden" name="poll_id" value="{{$item->id}}">
                     <input type="text" name="title" placeholder="Seçenek ismi" class="form-control">
