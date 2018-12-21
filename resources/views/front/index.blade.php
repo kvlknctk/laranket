@@ -3,6 +3,7 @@
 
 @php
     $allData = $indexData->pollsData();
+    $poll_id = $indexData->pollId();
 @endphp
 
 @section('content')
@@ -14,15 +15,16 @@
         <div class="card-deck mb-3 text-center">
 
 
-
             @yield('anket')
 
             <div class="col-md-12">
 
-                <select name="" id="" class="form-control"  onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                <select name="" id="" class="form-control"
+                        onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
                     <option value="">Diğer anketler</option>
                     @foreach($allData as $item)
-                        <option value="{{route('anket', ['id' => $item->id])}}">{{$item->title}}</option>
+                        <option value="{{route('anket', ['id' => $item->id])}}"
+                                @if($item->id == $poll_id) selected @endif >{{$item->title}}</option>
                     @endforeach
 
                 </select>

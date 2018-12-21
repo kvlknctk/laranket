@@ -24,5 +24,12 @@
             return $polls;
         }
 
+        public function pollId()
+        {
+            //dd(request()->segment(2));
+            return request()->segment(2);
+
+        }
+
 
     }
