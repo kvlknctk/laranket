@@ -1,0 +1,1 @@
+burası anketlerin listelendiği sayfa
