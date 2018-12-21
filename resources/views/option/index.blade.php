@@ -27,9 +27,12 @@
                     </ul>
                 {{--<a href="{{route('secenek.create', ['id' => $item->id])}}" class="btn btn-xs btn-success">Seçenek ekle</a>--}}
                 <hr>
-                <form action="{{route('secenek.store')}}" method="POST"  >
+                <b>Yeni seçenek ekle:</b>
+                <form action="{{route('secenek.store')}}" method="POST" enctype="multipart/form-data" style="zoom: 0.7; background-color: #e5ffbe; border: 1px solid #000;"  >
                     @csrf
                     <input type="hidden" name="poll_id" value="{{$item->id}}">
+                    <input type="file" name="image" placeholder="resim seç" >
+                    <input type="text" name="color" placeholder="renk seçimi" value="info">
                     <input type="text" name="title" placeholder="Seçenek ismi" class="form-control">
                     <button class="btn btn-success btn-sm" type="submit">
                         ekle
