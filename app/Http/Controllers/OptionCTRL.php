@@ -42,7 +42,6 @@
          */
         public function store(Request $request)
         {
-            $image     = $request->file('image');
             $photoName = time() . '.' . $request->image->getClientOriginalExtension();
 
             /*
