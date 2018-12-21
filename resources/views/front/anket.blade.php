@@ -63,8 +63,6 @@
                                 @if(!$switch)
                                     <a href="{{route('oy_ver', ['id' => $item->id])}}"
                                        class="btn btn-sm btn-block btn-primary ">OYLA!</a>
-                                @else
-                                    Oy Kullandınız.
                                 @endif
                             </div>
                         </div>
