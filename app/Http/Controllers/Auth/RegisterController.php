@@ -37,7 +37,7 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
-        //die('Get out!');
+        die('Get out!');
         $this->middleware('guest');
     }
 
