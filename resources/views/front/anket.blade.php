@@ -6,7 +6,7 @@
             <h4 class="my-0 font-weight-normal">Iğdır Merkez
                 <br>
                 {{$masterPoll->title}}
-                @if($switch) <br> Oy kullandınız @endif
+                {{--@if($switch) <br> Oy kullandınız @endif--}}
             </h4>
         </div>
         <div class="card-body">
