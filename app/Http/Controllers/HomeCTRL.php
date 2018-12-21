@@ -11,6 +11,11 @@
     {
 
 
+        public function iletisim()
+        {
+            return 0;
+        }
+
         public function index()
         {
             // burası yukarıdan 3

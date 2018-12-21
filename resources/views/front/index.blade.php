@@ -33,11 +33,12 @@
         <footer class="pt-4 my-md-5 pt-md-5 border-top">
             <div class="row">
 
-                <div class="col-12 col-md text-center">
-                    <h5>İletişim</h5>
+                <div class="col-12 text-center">
+                    <a href="{{route('iletisim')}}">
+                        <h5>İletişim</h5>
+                    </a>
                     <ul class="list-unstyled text-small">
                         {{--<li><a class="text-muted" href="#">Cool stuff</a></li>--}}
-
                     </ul>
                 </div>
 

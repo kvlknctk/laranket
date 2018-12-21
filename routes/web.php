@@ -2,6 +2,7 @@
 
 
     Route::get('/', 'HomeCTRL@index')->name('index');
+    Route::get('/iletisim', 'HomeCTRL@iletisim')->name('iletisim');
     Route::get('/anket/{id}', 'HomeCTRL@anket')->name('anket');
     Route::get('/oy_ver/{id}', 'HomeCTRL@oy_ver')->name('oy_ver');
 
