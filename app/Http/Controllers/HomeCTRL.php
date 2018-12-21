@@ -13,7 +13,7 @@
 
         public function iletisim()
         {
-            return 0;
+            return view('iletisim');
         }
 
         public function index()
