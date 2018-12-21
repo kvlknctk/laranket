@@ -16,9 +16,9 @@
 
                     @foreach($masterPoll->options as $item)
                         <div class="secenek">
-                            <div class="sec_foto">
+                            <divm class="sec_foto">
                                 <img src="{{asset('upload/isa.jpg')}}" alt="">
-                            </div>
+                            </divm>
                             <div class="sec_bar">
                                 <div class="sec_name">
                                     {{$item->title}}
