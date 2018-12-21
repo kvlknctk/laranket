@@ -13,10 +13,10 @@
         <a href="{{route('index')}}"><img src="{{asset('logo.png')}}" alt="Iğdır Anket Logo "></a>
     </h5>
 
-    <nav class="my-2 my-md-0 mr-md-3">
+   {{-- <nav class="my-2 my-md-0 mr-md-3">
         <a class="p-2 text-dark" href="#">Tüm Anketler</a>
         <a class="p-2 text-dark" href="#">Sonuçlar</a>
-    </nav>
+    </nav>--}}
 </div>
 
 
