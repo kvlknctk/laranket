@@ -45,6 +45,7 @@
                 <div class="col-12 text-center">
                     {{--<img class="mb-2" src="../../assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">--}}
                     <small class="d-block mb-3 text-muted">&copy; 2017-2018, Tüm hakları saklıdır.
+                        <br>
                         Powered by <a href="https://eruzay.com.tr" target="_blank">Eruzay Yazılım</a>
                     </small>
                 </div>
