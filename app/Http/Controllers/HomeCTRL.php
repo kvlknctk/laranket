@@ -13,7 +13,7 @@
 
         public function index()
         {
-            // burası yukarıdan 2
+            // burası yukarıdan 3
             $poll_id    = 1;
             $masterPoll = Poll::with('options')->find($poll_id);
             $polls = Poll::get();
