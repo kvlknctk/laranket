@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Option extends Model
 {
     use SoftDeletes;
-    protected $fillable  = ['title', 'poll_id'];
+    protected $fillable  = ['title', 'poll_id', 'image', 'color'];
 
 
     public function votes()
