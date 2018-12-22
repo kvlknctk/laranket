@@ -5,7 +5,6 @@
         <div class="card-header">
             <h4 class="my-0 font-weight-normal">Iğdır / {{$masterPoll->state->title}}
                 <br>
-
                 {{--@if($switch) <br> Oy kullandınız @endif--}}
             </h4>
         </div>
@@ -17,7 +16,7 @@
                     @foreach($masterPoll->options as $item)
                         <div class="secenek">
                             <divm class="sec_foto">
-                                <img src="{{asset('avatars/'.$item->image)}}" alt="" width="80">
+                                <img src="{{asset('avatars/'.$item->image)}}" alt="" width="60">
                             </divm>
                             <div class="sec_bar">
                                 <div class="sec_name">
@@ -26,8 +25,10 @@
 
 
                                     @if($switch)
-                                        <div style="font-size: 15px;"><b>Toplam Oy</b> : {{$item->votes_count}} /
-                                            % {{ round(@($item->votes_count / $sum) * 100) }}</div>
+                                        <div style="font-size: 15px;">
+                                            {{--<b>Toplam Oy</b> : {{$item->votes_count}} /--}}
+                                            <b style="float: right;">% {{ round(@($item->votes_count / $sum) * 100) }}</b>
+                                        </div>
                                     @else
                                         <br>
                                         <br>
