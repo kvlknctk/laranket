@@ -15,8 +15,6 @@
         <div class="card-deck mb-3 text-center">
 
 
-            @yield('anket')
-
             <div class="col-md-12">
 
                 <select name="" id="" class="form-control"
@@ -29,6 +27,14 @@
 
                 </select>
             </div>
+
+            <br>
+            <br>
+
+
+            @yield('anket')
+
+
 
         </div>
 
