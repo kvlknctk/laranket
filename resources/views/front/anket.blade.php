@@ -16,7 +16,7 @@
                     @foreach($masterPoll->options as $item)
                         <div class="secenek">
                             <divm class="sec_foto">
-                                <img src="{{asset('avatars/'.$item->image)}}" alt="" width="60">
+                                <img src="{{asset('avatars/'.$item->image)}}" alt="" width="60" class="img-responsive">
                             </divm>
                             <div class="sec_bar">
                                 <div class="sec_name">
@@ -42,11 +42,12 @@
                                 @if($switch)
                                     <div class="progress">
                                         <div class="progress-bar progress-bar-striped progress-bar-animated"
+
                                              role="progressbar"
                                              aria-valuenow="75"
                                              aria-valuemin="0"
                                              aria-valuemax="100"
-                                             style="width: {{ @($item->votes_count / $sum) * 100 }}%"></div>
+                                             style="width: {{ @($item->votes_count / $sum) * 100 }}%; background-color: {{$item->color}};"></div>
                                     </div>
                                 @else
                                     <div class="progress">
