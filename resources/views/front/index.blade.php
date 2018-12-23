@@ -4,6 +4,7 @@
 @php
     $allData = $indexData->pollsData();
     $poll_id = $indexData->pollId();
+    $adversites = $indexData->getAdversite();
 @endphp
 
 @section('content')
@@ -15,29 +16,31 @@
         <div class="card-deck mb-3 text-center">
 
 
-            <div class="col-md-12">
+            <div class="col-md-12 mb-3">
 
-                <select name="" id="" class="form-control"
-                        onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+
+                <select name="" id="secenek" class="form-control"
+                                              onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
                     <option value="">Diğer anketler</option>
+
                     @foreach($allData as $item)
                         <option value="{{route('anket', ['id' => $item->id])}}"
-                                @if($item->id == $poll_id) selected @endif >{{$item->title}}</option>
+                                @if($item->id == $poll_id) selected @endif >
+                            {{$item->title}}
+                        </option>
                     @endforeach
 
                 </select>
             </div>
 
-            <div class="col-md-12">
+            @yield('anket')
 
+            <br>
+            <div class="col-md-12">
+                <img src="{{asset('yukleme/'.$adversites['image'])}}" alt="" class="img-thumbnail">
             </div>
 
             <br>
-            <br>
-
-
-            @yield('anket')
-
 
 
         </div>

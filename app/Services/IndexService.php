@@ -5,6 +5,7 @@
         use App\Category;
         use App\News;*/
 
+    use App\Adversite;
     use App\Poll;
 
     class IndexService
@@ -29,6 +30,11 @@
             //dd(request()->segment(2));
             return request()->segment(2);
 
+        }
+
+        public function getAdversite()
+        {
+            return array_random(Adversite::get()->toArray());
         }
 
 
