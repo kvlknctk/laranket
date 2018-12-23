@@ -16,6 +16,14 @@
             return view('iletisim');
         }
 
+        public function canli()
+        {
+            $masterPoll = Poll::with('options', 'state')->get();
+
+            return view('adversite', compact('masterPoll'));
+
+        }
+
         public function index()
         {
             // burası yukarıdan 3

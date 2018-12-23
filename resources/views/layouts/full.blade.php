@@ -9,6 +9,8 @@
                     <li><a href="{{route('anket.index')}}">Anketler</a></li>
                     <li><a href="{{route('secenek.index')}}">Seçenekler</a></li>
                     <li><a href="{{route('hack.index')}}">Hack</a></li>
+                    <hr>
+                    <li><a href="{{route('reklam.index')}}">Reklam Alanı</a></li>
                 </ul>
             </div>
             <div class="col-md-10">
