@@ -32,9 +32,13 @@
 
         }
 
-        public function getAdversite()
+       public function getAdversite()
         {
-            return array_random(Adversite::get()->toArray());
+            if (Adversite::get()) {
+                return array_random(Adversite::get()->toArray());
+            }else {
+                return false;
+            }
         }
 
 
