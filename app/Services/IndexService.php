@@ -34,10 +34,10 @@
 
        public function getAdversite()
         {
-            if (Adversite::get()) {
+            if (count(Adversite::get())) {
                 return array_random(Adversite::get()->toArray());
             }else {
-                return false;
+                return;
             }
         }
 
