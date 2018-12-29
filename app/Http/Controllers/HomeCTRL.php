@@ -27,7 +27,7 @@
         public function index()
         {
             // burası yukarıdan 3
-            $poll_id    = 7;
+            $poll_id    = 12;
             $masterPoll = Poll::with('options', 'state')->find($poll_id);
 
             //return $masterPoll;
