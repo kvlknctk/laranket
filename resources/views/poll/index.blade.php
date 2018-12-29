@@ -8,7 +8,7 @@
             <div class="col-md-3" style="border: 1px solid #c6c6c6; margin: 5px; padding: 5px;">
                 {{$item->title}}
                 <br>
-                <strong>Bölge:</strong> {{$item->state->title}}
+                <strong>Bölge:</strong> {{@$item->state->title}}
                 <br>
                 <strong>ID:</strong> {{$item->id}}
                 <form action="{{route('anket.destroy', ['id' => $item->id])}}" method="POST" >
