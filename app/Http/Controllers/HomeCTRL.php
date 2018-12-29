@@ -36,7 +36,7 @@
             $switch = $this->session_kontrol($poll_id);
 
             //Anketin toplamda kaç oyu var? diye maximum oy hesaplayacağız yüzde için.
-            $sum = $masterPoll->options->sum('votes_count');
+            $sum = @$masterPoll->options->sum('votes_count');
 
 
             return view('front.anket', compact('masterPoll', 'sum', 'switch', 'polls'));
