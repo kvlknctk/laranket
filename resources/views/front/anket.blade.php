@@ -3,7 +3,7 @@
 @section('anket')
     <div class="card mb-4 shadow-sm">
         <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Iğdır / {{$masterPoll->state->title}}
+            <h4 class="my-0 font-weight-normal">Iğdır / {{@$masterPoll->state->title}}
                 <br>
                 {{--@if($switch) <br> Oy kullandınız @endif--}}
             </h4>
@@ -21,7 +21,6 @@
                             <div class="sec_bar">
                                 <div class="sec_name">
                                     {{$item->title}}
-
 
 
                                     @if($switch)
@@ -69,6 +68,8 @@
                             </div>
                         </div>
                     @endforeach
+
+
 
 
                 </div>

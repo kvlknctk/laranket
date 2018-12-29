@@ -27,8 +27,10 @@
         public function index()
         {
             // burası yukarıdan 3
-            $poll_id    = 1;
+            $poll_id    = 7;
             $masterPoll = Poll::with('options', 'state')->find($poll_id);
+
+            //return $masterPoll;
             $polls = Poll::get();
             // Bu bize oturumda kullanıcının malum ankete oyu var mı diye kontrol edecek.
             $switch = $this->session_kontrol($poll_id);
