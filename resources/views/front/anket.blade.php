@@ -3,7 +3,7 @@
 @section('anket')
     <div class="card mb-4 shadow-sm">
         <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Iğdır / as
+            <h4 class="my-0 font-weight-normal">Iğdır / asd
                 <br>
                 {{--@if($switch) <br> Oy kullandınız @endif--}}
             </h4>
