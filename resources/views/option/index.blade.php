@@ -31,9 +31,9 @@
                 <form action="{{route('secenek.store')}}" method="POST" enctype="multipart/form-data" style="padding: 10px; background-color: #e5ffbe; border: 1px solid #000;"  >
                     @csrf
                     <input type="hidden" name="poll_id" value="{{$item->id}}">
-                    <input type="file" name="image" placeholder="resim seç" class="form-control-sm">
-                    <input type="text" name="color" placeholder="Örnek : #FF00FF" class="form-control-sm" autocomplete="off">
-                    <input type="text" name="title" placeholder="Seçenek ismi" class="form-control-sm" autocomplete="off">
+                    <input type="file" name="image" placeholder="resim seç" class="form-control-sm" required>
+                    <input type="text" name="color" placeholder="Örnek : #FF00FF" class="form-control-sm" autocomplete="off" required>
+                    <input type="text" name="title" placeholder="Seçenek ismi" class="form-control-sm" autocomplete="off" required>
                     <button class="btn btn-success btn-sm" type="submit">
                         ekle
                     </button>
